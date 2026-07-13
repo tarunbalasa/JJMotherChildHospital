@@ -1,277 +1,203 @@
-body{
+<!DOCTYPE html>
+<html>
+<head>
 
-margin:0;
+<title>JJ Mother & Child Multispeciality Hospital</title>
 
-font-family:Arial;
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-background:#f4f8fb;
+<link rel="stylesheet" href="style.css">
 
-}
+</head>
 
 
-header{
+<body>
 
-background:#0077cc;
 
-color:white;
+<header>
 
-padding:20px;
+<img src="images/logo.png" alt="JJ Mother & Child Multispeciality Hospital Logo">
 
-display:flex;
+<h1>JJ Mother & Child Multispeciality Hospital</h1>
 
-align-items:center;
 
-gap:20px;
+<nav>
 
-flex-wrap:wrap;
+<a href="#home">Home</a>
+<a href="#departments">Departments</a>
+<a href="#doctors">Doctors</a>
+<a href="#services">Services</a>
 
-}
+<a href="#contact">Contact</a>
 
+</nav>
 
 
-header img{
+</header>
 
-width:60px;
 
-}
+<section id="home" class="hero">
 
 
+    <div class="hero-wrapper">
+        <img src="images/hospital_new.jpeg">
+        <div class="hero-overlay">
+            <h2>Your Health, Our Priority</h2>
+            <p>Advanced healthcare with experienced doctors and modern technology.</p>
+            <button onclick="bookNow()">Book Appointment</button>
+        </div>
+    </div>
 
-nav{
+</section>
 
-margin-left:auto;
 
-}
 
 
-nav a{
 
-color:white;
+<section id="departments">
 
-margin:10px;
 
-text-decoration:none;
+<h2>Medical Departments</h2>
 
-}
 
+<div class="cards">
 
 
-.hero{
+<div class="card">
 
-position:relative;
+<img src="images/gynic.jpg">
 
-text-align:center;
+<h3>Gynecology</h3>
 
-}
-.hero img {
-    width: 100%;
-    height: 400px;        /* fixed height, adjust as needed */
-    object-fit: cover;    /* crops to fill without stretching */
-    display: block;
-}
+<p>Women's health and reproductive care.</p>
 
+</div>
 
-.hospital-image{
 
-width:100%;
 
-height:450px;
+<div class="card">
 
-object-fit:cover;
+<img src="images/pediatric.jpg">
 
-opacity:.75;
+<h3>Pediatrics</h3>
 
-}
+<p>Child healthcare specialists.</p>
 
+</div>
 
 
-.hero div{
 
-position:absolute;
+</div>
 
-top:120px;
 
-width:100%;
+</section>
 
-color:white;
 
-}
 
 
 
-button{
+<section id="doctors">
 
-background:#0077cc;
 
-color:white;
+<h2>Our Doctors</h2>
 
-border:0;
 
-padding:14px 30px;
+<div class="cards">
 
-cursor:pointer;
 
-}
+<div class="doctor">
 
+<img src="images/Dr1.jpeg">
 
+<h3>Dr. PABBATHI AKHILA</h3>
 
-section{
+<p>MBBS, MD(OBG)</p>
 
-padding:40px;
+<p>12+ Years Experience</p>
 
-}
 
+</div>
 
 
-.cards{
 
-display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+<div class="doctor">
 
-gap:20px;
+<img src="images/Dr2.jpeg">
 
-}
+<h3>Dr. Pavan Jalamadugu</h3>
 
+<p>MBBS, MD(PEDIATRIC),PGPN</p>
 
+<p>16+ Years Experience</p>
 
-.card,.doctor{
 
-background:white;
+</div>
 
-padding:20px;
 
-text-align:center;
+</div>
 
-border-radius:10px;
 
-box-shadow:0 0 10px #ccc;
+</section>
 
-}
+<section id="services">
 
 
+<h2>Our Services</h2>
 
-.card img{
+<h3>🤰 Obstetrics & Gynecology</h3>
+<ul>
 
-width:100%;
+<li>Antenatal Checkup</li>
+<li>High Risk Pregnancy Care</li>
+<li>Menopause Management</li>
+<li>Fertility Services</li>
+<li>Normal/cesarian Delivery</li>
+<li>Tubectomy, Hysterectomy</li>
+<li>Myomectomy, Ectopic Pregnancy</li>
+<li>Cervical Cancer screening</li>
+</ul>
+<h3>👶 Pediatrics</h3>
+<ul>
+<li>Child healthcare specialists</li>
+<li>PICU NICU</li>
+<li>Vaccinations</li>
+<li>Newborn care & emergencies</li>
+<li>Nebulisation, Phototherapy</li>
+<li>Daycare & inpatient care</li>
+</ul>
 
-height:160px;
+</section>
 
-object-fit:cover;
 
-}
+<section id="contact">
 
 
+<h2>Contact</h2>
 
-.doctor img{
 
-width:130px;
+<p>📍 MBT Rd, Ashok Nagar, Punganur, Andhra Pradesh</p>
 
-height:130px;
+<p>☎ +91-8074418112</p>
 
-border-radius:50%;
+<p>✉ Jjhospital222@gmail.com</p>
 
-}
 
+</section>
 
 
-form{
+<footer>
 
-max-width:400px;
+© 2026 JJ Mother & Child Multispeciality Hospital
 
-display:flex;
+</footer>
 
-flex-direction:column;
 
-gap:15px;
 
-}
 
+<script src="script.js"></script>
 
 
-input,select{
+</body>
 
-padding:12px;
-
-}
-
-
-
-footer{
-
-background:#0077cc;
-
-color:white;
-
-text-align:center;
-
-padding:20px;
-
-}
-
-/* HERO */
-.hero-wrapper {
-    position: relative;
-    width: 100%;
-    z-index: 0;
-}
-
-.hero-wrapper img {
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
-    display: block;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-/* DOCTORS SECTION */
-#doctors {
-    position: relative;
-    z-index: 2;
-    background-color: #fff;
-    padding: 40px 20px;
-    width: 100%;
-    clear: both;
-}
-
-.doctor {
-    position: relative;
-    z-index: 2;
-}
-
-.doctor img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
-}
-
-/* MOBILE FIX */
-@media (max-width: 768px) {
-    .hero-wrapper img {
-        height: 40vh;  /* reduce hero image height on mobile */
-    }
-
-    #doctors {
-        margin-top: 0;
-        padding-top: 30px;
-    }
-
-    .cards {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .doctor {
-        width: 90%;
-    }
-}
+</html>
